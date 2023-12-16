@@ -1,0 +1,77 @@
+.sidebar {
+  flex: 4;
+  margin: 0px;
+  background-color: rgb(157, 157, 255);
+  padding-bottom: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  height: fit-content;
+  justify-content: center;
+
+  .sidebarTitle {
+    text-align: center;
+    font-size: larger;
+    border-bottom: black solid 2px;
+  }
+  .sideBarPic {
+    width: 100%;
+    padding: 5px 5px 10px 5px;
+  }
+
+  .categories {
+    margin-top: 10px;
+  }
+  .categoriesListItem {
+    background-color: rgb(210, 162, 255);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1px 5px 1px 5px;
+    width: max-content;
+    color: rgb(61, 61, 61);
+    pointer-events: none;
+  }
+  .categoriesListItem::after {
+    content: "X";
+    font-size: small;
+    padding: 2px 5px 2px 5px;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 50%;
+    margin-left: 5px;
+    pointer-events: all;
+    cursor: pointer;
+  }
+
+  .categoriesList {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+  }
+
+  .categoriesTitle {
+    font-size: 17px;
+    border-width: 2px 0px 2px 0px;
+    border-color: black;
+    border-style: ridge;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .socialMediaTitle {
+    font-size: 17px;
+    border-width: 2px 0px 2px 0px;
+    border-color: black;
+    border-style: ridge;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .socialMedia {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sidebar {
+    flex: 3;
+  }
+}

@@ -1,0 +1,110 @@
+.topbar {
+  position: sticky;
+  display: flex;
+  flex: 2;
+  top:0px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 136, 255);
+  padding: 0px 10px 0px 10px;
+  margin: 0px;
+  z-index: 10;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 2px;
+  padding: 5px;
+}
+
+.logosvg{
+  max-height: 50px;
+  max-width: 50px;
+  margin-right: 10px;
+  flex:3;
+}
+
+.navItem {
+  margin-right: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Fuzzy Bubbles", sans-serif;
+}
+
+.navItem>a {
+  font-family: inherit;
+  text-decoration: none;
+  color:white;
+}
+a:hover {
+  text-decoration: underline;
+}
+.topicon {
+  font-size: 20px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.profileImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.searchInputContainer {
+  background-color: rgba(190, 190, 190, 0.5);
+  border-radius: 10px 10px 10px 10px;
+  padding-left: 4px;
+  padding-top: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchinput{
+  font-size: 16px;
+  padding-left: 10px;
+  width:70px;
+  transition: 0.4s linear width, 0.4s linear padding;
+}
+.searchicon{
+margin:6px 2px 4px 2px;
+padding-right: 3px;
+cursor: pointer;
+}
+
+@media screen and (max-width: 600px)
+{
+  .searchinput{
+    width:0px;
+    padding:0px;
+    transition: 0.4s linear width, 0.4s linear padding;
+  }
+}
+
+
+.searchinput,.searchinput:active,.searchinput:focus,.searchinput:hover{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+.topLeft{
+  flex:3;
+  float:left;
+}
+.topRight
+{
+  flex:3;
+  display: flex;
+  justify-content: end;
+}
+
+.topCenter{
+  flex:6;
+}

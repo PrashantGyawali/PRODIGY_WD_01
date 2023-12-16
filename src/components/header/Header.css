@@ -1,0 +1,40 @@
+
+.headerImg{
+    object-fit: contain;
+    width: 100%;
+    max-height: 75vh;
+}
+.header{
+    margin-top:50px;
+    height: 100%;
+    background-color: rgb(39,4,62);
+    z-index: -2;
+    margin-bottom: 30px;
+}
+
+.headerTitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.headerTitleLg
+{
+    position: absolute;
+    font-size: 80px;
+    font-family: "Bubblegum Sans", sans-serif;
+    top:20%;
+    color:rgb(0, 110, 255);
+}
+.headerTitleSm
+{
+    position: absolute;
+    top:-30%;
+    font-stretch: narrower;
+    font-size: 35px;
+    font-family: "Bubblegum Sans", sans-serif;
+    color:white;
+
+}

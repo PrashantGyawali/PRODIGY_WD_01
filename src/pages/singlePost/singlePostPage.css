@@ -1,0 +1,12 @@
+.singlePostPage{
+    display: flex;
+    padding: 1px;
+    margin: 0px 6px 0px 6px;
+}
+
+@media screen and (max-width:700px)
+{
+    .singlePostPage{
+        flex-direction: column;
+    }
+}
